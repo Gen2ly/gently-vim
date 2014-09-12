@@ -15,4 +15,4 @@ A thorough Vim configuration file meant to replace the local ~/.vimrc.  Built fr
 
 ### Usage
 
-For Arch Linux, replace `runtime! archlinux.vim` with `runtime! gently.vim` in `/etc/vimrc`.
+Replace `runtime! archlinux.vim` with `runtime! gently.vim` in `/etc/vimrc` to enable.
