@@ -1,6 +1,6 @@
 ### Description
 
-A **through** vim configuration file, it is meant to replace the local `~/.vimrc`.  Built from the Vim's `vimrc_example` and various others, it has support-for:
+A through Vim configuration file meant to replace the local ~/.vimrc.  Built from the Vim's `vimrc_example` and various others, it has support-for:
 
 * Basic expected functionality
 * Backups, undos
