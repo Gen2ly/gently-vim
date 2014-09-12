@@ -2,7 +2,7 @@
 " attrib: Bram Moolenaar's excellent vimrc_example
 " attrib: http://briancarper.net/
 
-"" Basic Settings
+"" Basic settings
 set nocompatible                  " vim defaults (not vi)
 syntax on                         " enable syntax highlighting
 filetype plugin indent on         " filetype detection, w/ plugin, indent supprt
@@ -24,7 +24,7 @@ set directory=$HOME/.vim/backup,/tmp " backup directory for .swp
 set undodir=$HOME/.vim/backup,/tmp   " undosave directory
 set history=5000                     " keep 5000 lines of command line history
 
-"" Tab Settings
+"" Tab settings
 set tabstop=2                     " tab character amount
 set expandtab                     " tabs as space
 set shiftwidth=2                  " number of spaces for autoindent
