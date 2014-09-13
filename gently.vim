@@ -55,16 +55,8 @@ if &term=="xterm"                 " use 256 color palette if available
   set t_Co=256
   "colorscheme wombat256
 endif
+colorscheme jellybeans            " colorscheme
 set cursorline                    " highlight current line (disable underline)
-
-colorscheme jellybeans
-highlight Normal     ctermbg=303030
-highlight CursorLine ctermbg=235
-highlight Visual     ctermbg=240
-highlight Search     ctermbg=234
-highlight Error      ctermfg=167 ctermbg=234
-highlight DiffChange ctermbg=235
-highlight DiffText   ctermfg=32
 
 "" Filetype specific
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " .md as markdown
