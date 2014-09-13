@@ -84,6 +84,9 @@ augroup resCur
   autocmd BufReadPost * call setpos(".", getpos("'\""))
 augroup END                       " restore cursor position on open
 
+set noeol                         " attempt to stop prepending a newline at eof
+au BufNewFile * set noeol
+
 " set listchars=tab:.\ ,trail:•    " bullet trailing spaces and tabs
 " set list
 "autocmd bufwritepre * :%s/\s\+$//e " remove trailing whitespaces when saving
