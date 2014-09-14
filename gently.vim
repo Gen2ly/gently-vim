@@ -1,5 +1,5 @@
 " ~/.vimrc
-" attrib: Bram Moolenaar's excellent vimrc_example
+" attrib: vimrc_example by Bram Moolenaar
 " attrib: http://briancarper.net/
 
 "" Basic settings
@@ -14,15 +14,17 @@ set backspace=indent,eol,start    " backspace erases in insert mode
 set ruler                         " show cursor position in statusbar
 set showcmd                       " show partial command in status line
 set wrap                          " wrap lines automatically (create new line)
+set history=5000                  " keep 5000 lines of command line history
 "set number                        " show line numbers
 
 "" Backups
-set backup                           " backup enable
-set undofile                         " undo enable
-set backupdir=$HOME/.vim/backup,/tmp " backup directory to avoid clutter
-set directory=$HOME/.vim/backup,/tmp " backup directory for .swp
-set undodir=$HOME/.vim/backup,/tmp   " undosave directory
-set history=5000                     " keep 5000 lines of command line history
+set backup                                       " backup enable
+set undofile                                     " undo enable
+set backupdir=$XDG_CACHE_HOME/vim/backup/,/tmp/  " backup directory
+set directory=$XDG_CACHE_HOME/vim/backup/,/tmp/  " backup directory for .swp
+set undodir=$XDG_CACHE_HOME/vim/backup/,/tmp/    " undosave directory
+set viminfo+=n$XDG_CACHE_HOME/vim/viminfo        " vim command history info
+set runtimepath=$XDG_DATA_HOME/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
 
 "" Tab settings
 set tabstop=2                     " tab character amount
@@ -51,9 +53,10 @@ set smartcase                     " additional parameters for above
 set wrapscan                      " search will wrap after end of file
 
 "" Appearance
-if &term=="xterm"                 " use 256 color palette if available
+if &term == "xterm"               " use 256 color palette if available
   set t_Co=256
   "colorscheme wombat256
+"else
 endif
 colorscheme jellybeans            " colorscheme
 set cursorline                    " highlight current line (disable underline)
