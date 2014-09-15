@@ -63,6 +63,8 @@ set cursorline                    " highlight current line (disable underline)
 
 "" Filetype specific
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " .md as markdown
+autocmd Filetype markdown  setlocal background=dark syn=pandoc
+autocmd Filetype markdown  colorscheme pencil
 autocmd Filetype gitcommit setlocal spell textwidth=72 formatoptions+=t
 
 "" Others
