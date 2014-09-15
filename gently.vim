@@ -56,15 +56,17 @@ set wrapscan                      " search will wrap after end of file
 if &term == "xterm"               " use 256 color palette if available
   set t_Co=256
   "colorscheme wombat256
-"else
+  autocmd Filetype markdown  setlocal background=dark syn=pandoc
+  autocmd Filetype markdown  colorscheme pencil
+else
+  autocmd Filetype markdown  setlocal background=dark syn=pandoc
+  autocmd Filetype markdown  colorscheme default
 endif
 colorscheme jellybeans            " colorscheme
 set cursorline                    " highlight current line (disable underline)
 
 "" Filetype specific
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown " .md as markdown
-autocmd Filetype markdown  setlocal background=dark syn=pandoc
-autocmd Filetype markdown  colorscheme pencil
 autocmd Filetype gitcommit setlocal spell textwidth=72 formatoptions+=t
 
 "" Others
