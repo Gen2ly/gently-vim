@@ -20,10 +20,10 @@ set history=5000                  " keep 5000 lines of command line history
 "" Backups
 set backup                                     " backup enable
 set undofile                                   " undo enable
-set backupdir=$HOME/.config/vim/backup/,/tmp/  " backup directory
-set directory=$HOME/.config/vim/backup/,/tmp/  " backup directory for .swp
-set undodir=$HOME/.config/vim/backup/,/tmp/    " undosave directory
-set viminfo+=n$HOME/.config/vim/viminfo        " vim command history info
+set backupdir=$HOME/.cache/vim/backup/,/tmp/   " backup directory
+set directory=$HOME/.cache/vim/backup/,/tmp/   " backup directory for .swp
+set undodir=$HOME/.cache/vim/backup/,/tmp/     " undosave directory
+set viminfo+=n$HOME/.cache/vim/viminfo         " vim command history info
 set runtimepath=$HOME/.local/share/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
 
 "" Tab settings
