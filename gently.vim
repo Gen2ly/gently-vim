@@ -18,13 +18,13 @@ set history=5000                  " keep 5000 lines of command line history
 "set number                        " show line numbers
 
 "" Backups
-set backup                                       " backup enable
-set undofile                                     " undo enable
-set backupdir=$XDG_CACHE_HOME/vim/backup/,/tmp/  " backup directory
-set directory=$XDG_CACHE_HOME/vim/backup/,/tmp/  " backup directory for .swp
-set undodir=$XDG_CACHE_HOME/vim/backup/,/tmp/    " undosave directory
-set viminfo+=n$XDG_CACHE_HOME/vim/viminfo        " vim command history info
-set runtimepath=$XDG_DATA_HOME/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
+set backup                                     " backup enable
+set undofile                                   " undo enable
+set backupdir=$HOME/.config/vim/backup/,/tmp/  " backup directory
+set directory=$HOME/.config/vim/backup/,/tmp/  " backup directory for .swp
+set undodir=$HOME/.config/vim/backup/,/tmp/    " undosave directory
+set viminfo+=n$HOME/.config/vim/viminfo        " vim command history info
+set runtimepath=$HOME/.local/share/vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after
 
 "" Tab settings
 set tabstop=2                     " tab character amount
@@ -103,3 +103,4 @@ map <CR> o<Esc>                         " Enter: newline, remain in command-mode
 
 noremap <C-J> gj                        " Ctrl + J: Joined line navigate down
 noremap <C-K> gk                        " Ctrl + K: Joined line navigate up
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left> " Ctrl + R replace selected
