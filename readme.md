@@ -17,7 +17,7 @@ A thorough Vim configuration file meant to replace the local `~/.vimrc`.  Built 
 
 Replace `runtime! archlinux.vim` with `runtime! gently.vim` in `/etc/vimrc` to enable.
 
-The configuration directs Vim to use the XDG user directories.  It may be unnecessary but it doesn't hurt to create their directories:
+The configuration directs Vim to use the XDG user directories.  Create their directories by doing:
 
 ```bash
 mkdir -p ~/.cache/vim/backup/

@@ -107,4 +107,4 @@ map <CR> o<Esc>                         " Enter: newline, remain in command-mode
 
 noremap <C-J> gj                        " Ctrl + J: Joined line navigate down
 noremap <C-K> gk                        " Ctrl + K: Joined line navigate up
-vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left> " Ctrl + R replace selected
+vnoremap <C-r> "hy:%s/<C-r>h//gc<left><left><left>
