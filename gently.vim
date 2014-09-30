@@ -56,13 +56,14 @@ set wrapscan                      " search will wrap after end of file
 if &term == "xterm"               " use 256 color palette if available
   set t_Co=256
   "colorscheme wombat256
+  colorscheme jellybeans          " colorscheme
   autocmd Filetype markdown  setlocal background=dark syn=pandoc
   autocmd Filetype markdown  colorscheme pencil
 else
+  colorscheme default
   autocmd Filetype markdown  setlocal background=dark syn=pandoc
   autocmd Filetype markdown  colorscheme default
 endif
-colorscheme jellybeans            " colorscheme
 set cursorline                    " highlight current line (disable underline)
 
 "" Filetype specific
